@@ -72,7 +72,8 @@ section.sobre{
 #imagepos{
     position: absolute;
     right: 700px;
-    top: -50px;
+    top: 20px;
+    width: 500px;
 }
 
 .social-media{
