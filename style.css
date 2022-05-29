@@ -2,125 +2,346 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
+
+
+body::-webkit-scrollbar {
+    width: 12px;               
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #ffffff;        
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #660d8b;
+    background-image: linear-gradient(180deg, #660d8b 0%, #131294 100%); 
+    border-radius: 10px;     
+    border: 2px solid #ffffff;  
+  }
+
 
 .center{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
     display: flex;
     flex-wrap: wrap;
-    max-width: 1280px;
-    margin:0 auto;
-    padding:0 2%;
 }
 
-html, body{
-    height: 100%;
-    overflow-y: hidden;
-    overflow-x: hidden;
+.menu-mobile{
+    display: none;
 }
+
 
 header{
-    height: 200px;
-    padding:20px 0;
+    background-color: #5c0d8c;
+    padding: 70px 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-.logo{
-    width: 50%;
+
+.logo img{
+    width: 100px;
+    float: left;
 }
+
 
 .menu{
-    padding-top: 25px;
-    width: 50%;
+    width: 85%; 
     text-align: right;
+    float: right;
+    padding-top: 30px;
 }
 
 .menu a{
-    color:black;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 50;
     text-decoration: none;
-    font-weight: bold;
-    margin: 1px;
-    margin-right: 10px;
-    font-size:20px;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    line-height: 2em;
+    margin-right: 30px;
+    transition: 0.5s;
 }
 
 .menu a:hover{
-    border-bottom: 2px solid #ffffff;
+    color: #79a4ff;
+    border-bottom: 1px solid #ffffff;
 }
 
-button a:hover{
-    border-bottom: 2px solid #ffffff;
+.menu .btn-menu{
+    background-color: #182257;
+    display: inline-block;
+    padding: 8px 16px;
+    color: white;
+    border-radius: 6px;
 }
 
-section.sobre{
-    height: calc(100% - 200px);
-    position: relative;
+.menu .btn-menu:hover{
+    background-color: #1c2052;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+
 }
 
-.extras{
-    image-orientation: 100%;
+/*
+    Section Main
+*/
+
+section.main{
+    background-color: #660d8b;
+    background-image: linear-gradient(180deg, #660d8b 0%, #131294 100%);
+    padding: 80px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main_cta{
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.main_cta img{
+    width: 100%;
+    position: center;
+    max-width: 450px;
+    max-height: 450px;
+}
+
+.main_cta p{
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+
+section.tutorial{
+    padding: 40px 0;
+    background-color: #ffffff; /* tirar se bugar, foi colocado no dia 24/05*/
+}
+
+.chamada-sobre{
+    width: 100%;
+    text-align: center;
+}
+
+.chamada-sobre h2{
+    color: #071f6b;
+    text-transform: uppercase;
+}
+
+.chamada-sobre p{
+    font-size: 16px;
+    color: #071f6b;
+    margin: 10px 0;
+}
+
+.conteudo-sobre{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.conteudo-sobre p{
+    /*width: 98%;
+    margin-right: 2%;*/
+    margin: 0 30px;
+    text-align: justify;
+    color: #0f0d31;
+}
+
+.conteudo-sobre span{
+    display: inline block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.conteudo-sobre i{
+    color: #361b69;
+}
+
+section.aviso{
+    background-color: #660d8b;
+    background-image: linear-gradient(135deg, #660d8b 0%, #131294 100%); 
+    padding: 30px 0; /*20px*/
+}
+
+.aviso-single{
+    width: 33%; /*31%*/
+    margin-right: 0%; /*2%*/
+    text-align: center;
+}
+
+.aviso-single h2{
+    color: #ffffff;
+    font-size: 22px; /*20px*/
+}
+
+.aviso-single p{
+    color: #d9e2ff;
+    font-size: 18px; /*16px*/
+
+}
+
+/* MOBILE*/
+.menu-items{
     position: absolute;
-    bottom: -500px;
-    right: -500px;
-    width: 1200px;
-    height: 1200px;
-    border-radius: 50%;
-    background-color: #170486;
-}
-
-#imgpos{
-    position: absolute;
-    right: 600px;
-    top: 0px;
-    width: 600px;
-}
-
-.social-media{
-    position: absolute;
-    top: 300px;
-    right: 520px;
-}
-
-.social-media img{
+    left: 0;
+    top: 105px;
+    width: 100%;
+    text-align: center;
+    background-color: #5c0d8c;
+    border-bottom: 2px solid #500f8e;
     display: block;
-    width: 35px;
-    margin:25px 0;
+    opacity: 0;
+    transition: 0.6s;
 }
 
-.texto-sobre{
-    margin-top: 100px;
+.menu-items.show{
+    opacity: 1;
+
 }
 
-.texto-sobre h1{
-    font-size: 50px;
+.menu-items.hidde{
+    opacity: 0;
+
 }
 
-.texto-sobre p{
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20px;
-
-    margin: 20px 0;
-    color: rgb(255, 255, 255);
-    max-width: 500px;
-    text-align:justify;
-}
-
-.texto-sobre button{
-    border: 0;
-    background-color: #170486;
-    color: white;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    border-radius: 10px;
-    width: 150px;
-    height: 50px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-.texto-sobre a{
-    color: white;
+.menu-items a{
+    display: block;
     text-decoration: none;
-    font-size: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    transition: 0.3s;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 150;
+    margin: 5px 0;
+}
+
+.menu-items a:hover{
+    color: #79a4ff;
+    transition: 0.5s;
+}
+
+.menu-items .btn-menu-mobile{
+    background-color: #182257;
+    display: inline-block;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 6px;
+}
+
+.menu-items .btn-menu-mobile:hover{
+    background-color: #1a0e3d;
+}
+/* MOBILE */
+
+
+
+section.contato{
+    padding: 40px 0;
+    background-color: #ffffff; /* tirar se bugar, foi colocado no dia 24/05*/
+}
+
+.contato-content{
+    width: 100%;
+    text-align: center;
+}
+
+.contato-content .contato-sobre p{
+    text-align: center;
+    font-size: 16px;
+    color: #071f6b;
+    margin: 10px 0;
+}
+
+.contato-content h2{
+    color: #071f6b;
+    text-transform: uppercase;
+
+}
+
+.contato-content p{
+    margin: 10px 30px;
+    text-align: justify;
+    color: #071f6b;
+}
+
+.contato-content a{
+    text-decoration: none;
+    color: #02328a;
+    
+}
+.contato-content .btn-contato{
+    background-color: #182257;
+    display: /*inline-*/block;
+    text-align: center;
+    padding: 8px 10px;
+    color: white;
+    border-radius: 6px;
+    font-size: 15px;
+    border: 0;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    /*tirar esses dois debaixo*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contato-content .btn-contato:hover{
+    background-color: #1c2052;
+}
+
+.contato-content a:hover{
+    color: #79a4ff;
+}
+
+
+@media screen and (max-width: 768px){
+    .diferencial-single{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .logo{
+        width: 40%;
+    }
+
+    .menu-mobile{
+        width: 60%;
+        text-align: right;
+        display: block;
+    }
+    .menu-mobile i{
+        cursor: pointer;
+        font-size: 25px;
+        margin-top: 4px;
+        color: #ffffff;
+        padding-top: 30px;
+    }
+
+    .conteudo-sobre p{
+        width: 100%;
+        margin: 20px 20px;
+    }
+    .aviso-single{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contato-content{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
 }

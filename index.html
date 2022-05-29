@@ -2,58 +2,120 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon3.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
     <title>Projeto Ymir</title>
-    <style>
-        body{
-            background-image: url(images/fundo.jpg);
-            background-size: 100%;
-            background-repeat: repeat;
-
-        }
-        h1, a{
-            color: white;
-        }
-        div{
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        p{
-            text-align: justify;
-        }
-        span{
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 60px;
-        }
-    </style>
 </head>
 <body>
     <header>
         <div class="center">
-            <div class="logo"><a href="index.html"><img src="images/logo-ice-100.png" alt=""></a></div>  <!--logo-->
-        <div class="menu">
-            <a href="https://projetoymir.github.io" style="color: white;">Início⠀⠀</a>
-            <a href="sobre.html" style="color: white;">Donos⠀⠀</a>
-            <a href="error.html" style="color: white;">iceTera Inc.⠀⠀</a>
-        </div> <!--menu-->
-        </div> <!--center-->
+             <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo-ice.png">
+                    </a>
+             </div><!--logo-->
+             <div class="menu">
+                <a href="#tutorial">
+                    Donos
+                </a>
+                 <a href="#contato">
+                     Contato
+                 </a>
+                 <a class="btn-menu" href="StarLoad.zip">
+                    iceTera Inc.
+                </a>
+             </div><!--menu-->
+             <div class="menu-mobile">
+                <i class="fa-solid fa-bars menu-mobile-icon"></i>
+                <div class="menu-items">
+                    <a href="#tutorial">Donos</a>
+                    <a href="#contato">Contato</a>
+                    <a class="btn-menu-mobile" href="StarLoad.zip">iceTera Inc.</a>
+                </div>
+             </div>
+        </div><!--center-->
     </header>
-    <section class="sobre">
-        <div class="extras">
-            <img src="images/ymir2.png" id="imgpos">
-            <div class="social-media">
-                <a href="https://twitter.com/ymirprojeto"><img src="images/twitter2-1.png"></a>
-            </div>
-        </div><!--extras-->
+
+    <section class="main">
         <div class="center">
-            <div class="texto-sobre">
-                <h1>Não é um mero Projeto<br> É o <span style="color: #4999f5;">Projeto.Ymir</span></h1>
-                <p>Meio Comercial e Doméstico. <br>Todo tipo de funcionalidade em um só projeto, baixe o PDF abaixo e conheça mais sobre o Ymir!</p>
-                <button><a href="https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:e7a7a65a-ac91-49ba-9f4e-cf42ed128060">Baixar PDF</a></button>
+            <div class="main_cta">
+                <img src="ymir.png" alt="">
+                <p>Não é um mero projeto</p>
+                <p>É o <span style="color: #4999f5; font-size: 40px; font-weight: 510;"> Projeto.Ymir</span></p>
+            </div><!--main_cta-->
+            
+
+        </div><!--center-->
+    </section><!--main-->
+
+    <section class="tutorial" id="tutorial">
+        <div class="center">
+            <div class="chamada-sobre">
+                <h2>Donos</h2>
+                <p>Conheça o criador e o sócio do Projeto Ymir.</p>
+            </div><!--chamada-sobre-->
+            <div class="conteudo-sobre">
+                <p>Para usar o StarLoad é simples. A interface do aplicativo é intuitiva e minimalista, faciltiando a compreensão do usuário de forma a poder realizar a conversão rapidamente. É importante ressaltar que só funciona como vídeos ou shorts do Youtube, logo, nada de vídeos do Instagram, Facebook ou outros. Sendo assim, basta seguir tais passos e aproveitar!<br>
+                <span><i class="fa-solid fa-angles-right"></i> 1. Colocar o url do vídeo na área que se pede;<br></span> 
+                <span><i class="fa-solid fa-angles-right"></i> 2. Clicar em 'Browse' e escolher onde o arquivo será salvo;<br></span> 
+                <span><i class="fa-solid fa-angles-right"></i> 3. Clicar em 'Download' e aguardar a tela de confirmação;<br></span> 
+                <span><i class="fa-solid fa-angles-right"></i> 4. Aproveite! :)</span> <br>
+                </p>
+            </div><!--conteudo-sobre-->
+        </div><!--center-->
+    </section><!--tutorial-->
+
+    <section class="aviso">
+        <div class="center">
+            <div class="aviso-single">
+                <h2>Seus Dados?</h2>
+                <p>NÃO PEGAMOS NENHUM</p>
+            </div>
+            <div class="aviso-single">
+                <h2>Seu Dinheiro?</h2>
+                <p>NÃO QUEREMOS</p>
+            </div>
+            <div class="aviso-single">
+                <h2>Sua Privacidade?</h2>
+                <p>ESTÁ PROTEGIDA</p>
             </div>
         </div>
     </section>
+
+    <section class="contato" id="contato">
+        <div class="center">
+           <!--<img class="contato-img" src="eu3.png">-->
+            <div class="contato-content">
+                <h2>Contato</h2>
+                <div class="contato-sobre"> <p>Caso queira entrar em contato conosco, leia o texto abaixo! <br> <b>(NÃO MANDEM EMAILS DESNECESSÁRIOS, POR FAVOR)</b> </p></div>
+                <p>O site e o aplicativo <b>StarLoad</b> foi criado por Felipe Maronezi, um programador amador que tem como foco se especializar em Python, HTML, CSS e JavaScript, por enquanto. Por isso, erros e melhorias podem vir a acontecer, tanto no site, quanto no aplicativo. Assim, caso queiram enviar um feedback sobre o projeto, ou ainda uma mensagem de apoio, peço que usem este email: <br><a class="btn-contato" href="mailto: starload.app@gmail.com"><b>> Enviar Email</b></a></p>
+                <p>Além disso, sigam nossa página no Twitter e fiquem de olho em possíveis atualizações: <a href="https://twitter.com/starloadapp" target="_blank"> <b>@starloadapp</b></a></p>
+            </div>
+        </div><!--center-->
+    </section><!--contato-->
+
+
+
+
+    <script src="https://kit.fontawesome.com/9a66129654.js" crossorigin="anonymous"></script>
+    <script>
+
+        var el = document.querySelector('.menu-mobile-icon');
+
+        el.addEventListener('click', ()=> {
+            var menuItems = document.querySelector('.menu-items');
+            if(menuItems.classList.contains('show')){
+                menuItems.classList.add('hide');
+               menuItems.classList.remove('show');
+            }else{
+               menuItems.classList.add('show');
+               menuItems.classList.remove('hide');
+            }
+        });
+
+    </script>
 </body>
 </html>
