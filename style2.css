@@ -89,10 +89,9 @@ header{
 }
 
 
-section.main{
+/*section.main{
     background-color: #660d8b;
     background-image: linear-gradient(180deg, #660d8b 0%, #131294 100%);
-    padding: 334.5px 0;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -100,16 +99,10 @@ section.main{
 }
 
 .main_cta{
+    height: 100vh;
     width: 100%;
     margin: 10px 0;
     text-align: center;
-}
-
-.main_cta img{
-    width: 100%;
-    position: center;
-    max-width: 450px;
-    max-height: 450px;
 }
 
 .main_cta h1{
@@ -128,8 +121,49 @@ section.main{
 .main_cta a:hover{
     color: #79a4ff;
     transition: 0.5s;
+}*/
+
+body{
+    background-color: #660d8b;
+    background-image: linear-gradient(180deg, #660d8b 0%, #131294 100%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
+.principal{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.principal h1{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0;
+ 
+}
+.principal a{
+    color: #0084ff;
+    font-size: 35px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.principal a:hover{
+    color: #79a4ff;
+    transition: 0.5s;
+}
 
 /* MOBILE*/
 
