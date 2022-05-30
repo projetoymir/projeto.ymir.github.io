@@ -289,7 +289,8 @@ section.contato{
     
 }
 .contato-content .btn-contato{
-    background-color: #182257;
+    background-color: #660d8b;
+    background-image: linear-gradient(90deg, #660d8b 0%, #131294 100%); 
     display: /*inline-*/block;
     text-align: center;
     padding: 8px 10px;
@@ -306,7 +307,9 @@ section.contato{
 }
 
 .contato-content .btn-contato:hover{
-    background-color: #1c2052;
+    background-color: #8e21bd;
+    background-image: linear-gradient(135deg, #8e21bd 0%, #2626c5 100%); 
+    transition: 0.5s;
 }
 
 .contato-content a:hover{
