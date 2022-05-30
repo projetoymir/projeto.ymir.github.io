@@ -38,6 +38,7 @@ body::-webkit-scrollbar {
 
 header{
     background-color: #5c0d8c;
+    border-bottom: 2px solid #ffffff;
     padding: 70px 0;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -198,7 +199,7 @@ section.aviso{
     width: 100%;
     text-align: center;
     background-color: #5c0d8c;
-    border-bottom: 2px solid #500f8e;
+    border-bottom: 2px solid #ffffff;
     display: block;
     opacity: 0;
     transition: 0.6s;
