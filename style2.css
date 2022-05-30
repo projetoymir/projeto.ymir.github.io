@@ -6,7 +6,6 @@
     scroll-behavior: smooth;
 }
 
-
 body::-webkit-scrollbar {
     width: 12px;               
   }
@@ -20,7 +19,7 @@ body::-webkit-scrollbar {
     background-image: linear-gradient(180deg, #660d8b 0%, #131294 100%); 
     border-radius: 10px;     
     border: 2px solid #ffffff;  
-  }
+}
 
 
 .center{
@@ -30,6 +29,7 @@ body::-webkit-scrollbar {
     display: flex;
     flex-wrap: wrap;
 }
+
 
 .menu-mobile{
     display: none;
@@ -44,12 +44,10 @@ header{
     padding-bottom: 10px;
 }
 
-
 .logo img{
     width: 100px;
     float: left;
 }
-
 
 .menu{
     width: 85%; 
@@ -90,14 +88,11 @@ header{
 
 }
 
-/*
-    Section Main
-*/
 
 section.main{
     background-color: #660d8b;
     background-image: linear-gradient(180deg, #660d8b 0%, #131294 100%);
-    padding: 80px 0;
+    padding: 334.5px 0;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -117,88 +112,24 @@ section.main{
     max-height: 450px;
 }
 
-.main_cta p{
+.main_cta h1{
     color: #ffffff;
     font-size: 35px;
     font-weight: 500;
 }
 
-
-section.sobre{
-    padding: 40px 0;
-    background-color: #ffffff; /* tirar se bugar, foi colocado no dia 24/05*/
-}
-
-.chamada-sobre{
-    width: 100%;
-    text-align: center;
-}
-
-.chamada-sobre h2{
-    color: #071f6b;
-    text-transform: uppercase;
-}
-
-.chamada-sobre p{
-    font-size: 16px;
-    color: #071f6b;
-    margin: 10px 0;
-}
-
-.conteudo-sobre{
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.conteudo-sobre p{
-    /*width: 98%;
-    margin-right: 2%;*/
-    margin: 0 30px;
-    text-align: justify;
-    color: #0f0d31;
-}
-
-.conteudo-sobre a{
+.main_cta a{
+    color: #0084ff;
+    font-size: 35px;
+    font-weight: 500;
     text-decoration: none;
-    color: #02328a;
 }
 
-.conteudo-sobre a:hover{
+.main_cta a:hover{
     color: #79a4ff;
+    transition: 0.5s;
 }
 
-.conteudo-sobre span{
-    display: inline block;
-    width: 100%;
-    margin-top: 10px;
-}
-
-.conteudo-sobre i{
-    color: #361b69;
-}
-
-section.aviso{
-    background-color: #660d8b;
-    background-image: linear-gradient(135deg, #660d8b 0%, #131294 100%); 
-    padding: 30px 0; /*20px*/
-}
-
-.aviso-single{
-    width: 33%; /*31%*/
-    margin-right: 0%; /*2%*/
-    text-align: center;
-}
-
-.aviso-single h2{
-    color: #ffffff;
-    font-size: 22px; /*20px*/
-}
-
-.aviso-single p{
-    color: #d9e2ff;
-    font-size: 18px; /*16px*/
-
-}
 
 /* MOBILE*/
 
@@ -252,74 +183,7 @@ section.aviso{
 }
 /* MOBILE */
 
-
-
-section.contato{
-    padding: 40px 0;
-    background-color: #ffffff; /* tirar se bugar, foi colocado no dia 24/05*/
-}
-
-.contato-content{
-    width: 100%;
-    text-align: center;
-}
-
-.contato-content .contato-sobre p{
-    text-align: center;
-    font-size: 16px;
-    color: #071f6b;
-    margin: 10px 0;
-}
-
-.contato-content h2{
-    color: #071f6b;
-    text-transform: uppercase;
-
-}
-
-.contato-content p{
-    margin: 10px 30px;
-    text-align: justify;
-    color: #071f6b;
-}
-
-.contato-content a{
-    text-decoration: none;
-    color: #02328a;
-    
-}
-.contato-content .btn-contato{
-    background-color: #182257;
-    display: /*inline-*/block;
-    text-align: center;
-    padding: 8px 10px;
-    color: white;
-    border-radius: 6px;
-    font-size: 15px;
-    border: 0;
-    margin-top: 10px;
-    cursor: pointer;
-    transition: 0.5s;
-    /*tirar esses dois debaixo*/
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.contato-content .btn-contato:hover{
-    background-color: #1c2052;
-}
-
-.contato-content a:hover{
-    color: #79a4ff;
-}
-
-
 @media screen and (max-width: 768px){
-    .diferencial-single{
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
     .menu{
         display: none;
     }
@@ -340,19 +204,4 @@ section.contato{
         color: #ffffff;
         padding-top: 30px;
     }
-
-    .conteudo-sobre p{
-        width: 100%;
-        margin: 20px 20px;
-    }
-    .aviso-single{
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .contato-content{
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
 }
