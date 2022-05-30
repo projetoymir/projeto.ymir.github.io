@@ -38,10 +38,10 @@ body::-webkit-scrollbar {
 
 header{
     background-color: #5c0d8c;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
     padding: 70px 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 
@@ -192,14 +192,15 @@ section.aviso{
 }
 
 /* MOBILE*/
+
 .menu-items{
     position: absolute;
     left: 0;
-    top: 105px;
+    top: 110px;
     width: 100%;
     text-align: center;
     background-color: #5c0d8c;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
     display: block;
     opacity: 0;
     transition: 0.6s;
